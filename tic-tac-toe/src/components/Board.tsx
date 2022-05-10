@@ -12,7 +12,7 @@ interface BoardProps {
 //board function renders entire board
 const Board: React.FC<BoardProps> = (props) => {
   const renderSquare = (i: number) => {
-    return <Square value={props.squares[i]} onClick={() => props.onClick(i)} />;
+    return <Square  value={props.squares[i]}  onClick={() => props.onClick(i)} />;
   };
   return (
     <div>
