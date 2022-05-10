@@ -39,11 +39,14 @@
 
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  margin: 0;
+}
+
+.light{
+    background-color: white;
+}
+
+.dark{
   background-color: rgb(1, 2, 70);
 }
 
-ol,
-ul {
-  padding-left: 30px;
-}

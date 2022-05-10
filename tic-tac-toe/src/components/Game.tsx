@@ -77,7 +77,7 @@ const Game: React.FC = () => {
   return (
     <div className="game">
       <div className="game-status">
-        <Typography variant="h3" color="#b8b7ff" align="center">
+        <Typography variant="h3" color="#6c6aec" align="center">
           {status}
         </Typography>
       </div>
@@ -86,10 +86,10 @@ const Game: React.FC = () => {
           <Board squares={current.squares} onClick={(i) => handleClick(i)} />
         </div>
         <div className="game-info">
-          <Typography variant="h4" color="#b8b7ff" align="center">
+          <Typography variant="h4" color="#6c6aec" align="center">
             Game History
           </Typography>
-          <Typography variant="h5" color="#b8b7ff">
+          <Typography variant="h5" color="#6c6aec">
             <ol>{moves}</ol>
           </Typography>
         </div>

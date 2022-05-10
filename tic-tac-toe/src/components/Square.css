@@ -13,6 +13,7 @@
     width: 200px;
     color: rgb(19, 4, 94);
   }
+
   
   .square:focus {
     outline: none;
