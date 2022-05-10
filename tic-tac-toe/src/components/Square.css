@@ -22,3 +22,7 @@
   .kbd-navigation .square:focus {
     background: #ddd;
   }
+
+  .winn{
+    background-color: rgb(189, 251, 189);
+  }

@@ -1,6 +1,13 @@
+import React from "react";
+import { useAppDispatch } from "../app/hooks";
+import {squareA, squareB, squareC} from "./winnerSquares"
+
+
 type ValidSquare = 'X' | 'O' | null;
 
-export const calculateWinner = (squares: ValidSquare[]): ValidSquare => {
+export const CalculateWinner = (squares: ValidSquare[]): ValidSquare => {
+    const dispatch = useAppDispatch()
+
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -14,8 +21,13 @@ export const calculateWinner = (squares: ValidSquare[]): ValidSquare => {
     for (let i = 0; i < lines.length; i++) {
       const [a, b, c] = lines[i];
       if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+        dispatch(squareA(a));
+        dispatch(squareB(b));
+        dispatch(squareC(c));
         return squares[a];
       }
     }
     return null;
   };
+
+export default CalculateWinner

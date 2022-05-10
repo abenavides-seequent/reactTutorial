@@ -1,9 +1,10 @@
 import React from 'react'
 import {useState} from 'react'
-import {calculateWinner} from '../features/calculateWinner'
 import Board from './Board'
 import { Button, Typography } from '@mui/material'
+import CalculateWinner from '../features/CalculateWinner'
 import './Game.css'
+
 
 type ValidSquare = 'X' | 'O' | null;
 
@@ -24,7 +25,7 @@ const Game: React.FC = () => {
     const current = newHistory[newHistory.length - 1]; //current board history
     const squares = current.squares.slice(); //
 
-    if (calculateWinner(squares) || squares[i]) {
+    if (CalculateWinner(squares) || squares[i]) {
       //returns if a winner is declared or if board is full
       return;
     }
@@ -48,7 +49,7 @@ const Game: React.FC = () => {
   };
 
   const current = history[stepNumber];
-  const winner = calculateWinner(current.squares);
+  const winner = CalculateWinner(current.squares);
 
   const moves = history.map((step, move) => {
     //maps all existing moves for user to jump through
