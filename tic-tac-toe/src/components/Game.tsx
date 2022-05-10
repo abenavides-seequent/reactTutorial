@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
-import {calculateWinner} from '../features/calculateWinner'
+import {calculateWinner} from '../features/CalculateWinner'
 import Board from './Board'
 import { Button, Typography } from '@mui/material'
 import './Game.css'
