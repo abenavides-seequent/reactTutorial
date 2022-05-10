@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Game from './components/Game'
 import ThemePicker from './components/ThemePicker';
-import { useAppSelector } from './hooks';
+import { useAppSelector } from './app/hooks';
 
 
 function App() {

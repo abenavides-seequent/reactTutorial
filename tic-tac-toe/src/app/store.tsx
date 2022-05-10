@@ -1,6 +1,6 @@
 import {configureStore} from '@reduxjs/toolkit'
 import {Provider} from 'react-redux'
-import themeReducer from './features/theme'
+import themeReducer from '../features/theme'
 
 export const store = configureStore({
   reducer: {
