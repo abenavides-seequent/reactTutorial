@@ -8,13 +8,14 @@ type ValidSquare = 'X' | 'O' | null;
 interface SquareProps {
   onClick(): void;
   value: ValidSquare;
+  index: number
 }
 
 //clickable button inside square displays current cell value (X, O , null)
 //called by Board function
 const Square: React.FC<SquareProps> = (props) => {
   return (
-    <button className="square" onClick={props.onClick}>
+    <button data-testid={`squareButton` + props.index} className="square" onClick={props.onClick}>
       <Typography variant="h1">{props.value}</Typography>
     </button>
   );

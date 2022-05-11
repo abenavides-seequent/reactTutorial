@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import LightModeIcon from '@mui/icons-material/LightMode'; 
 import NightlightIcon from '@mui/icons-material/Nightlight';
 import { Button } from '@mui/material';
-import { useAppSelector, useAppDispatch} from '../app/hooks'
+import { useAppDispatch} from '../app/hooks'
 import {changeTheme} from '../features/theme'
 import './ThemePicker.css'
 

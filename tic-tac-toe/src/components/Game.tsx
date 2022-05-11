@@ -70,7 +70,10 @@ const Game: React.FC = () => {
   if (winner) {
     //displays winner or next turn
     status = "Winner: " + winner + "!";
-  } else {
+  } else if (stepNumber === 9){
+    status = "It's A Tie!";
+  }
+  else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
 
