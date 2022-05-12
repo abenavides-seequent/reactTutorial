@@ -72,12 +72,12 @@ test("go to move #1 after 3 moves where square 1 will be empty", () => {
 });
 
 test("go to move #1 after 3 moves and then alter the board", () => {
-    render(<Game />);
-    userEvent.click(screen.getByTestId("squareButton0"));
-    userEvent.click(screen.getByTestId("squareButton1"));
-    userEvent.click(screen.getByTestId("squareButton2"));
-    userEvent.click(screen.getByRole("button", { name: "Go to move #1" }));
-    userEvent.click(screen.getByTestId("squareButton8"));
-    const button3Status = screen.queryByRole("button", { name: "Go to move #3" });
-    expect(button3Status).not.toBeInTheDocument;
-  });
+  render(<Game />);
+  userEvent.click(screen.getByTestId("squareButton0"));
+  userEvent.click(screen.getByTestId("squareButton1"));
+  userEvent.click(screen.getByTestId("squareButton2"));
+  userEvent.click(screen.getByRole("button", { name: "Go to move #1" }));
+  userEvent.click(screen.getByTestId("squareButton8"));
+  const button3Status = screen.queryByRole("button", { name: "Go to move #3" });
+  expect(button3Status).not.toBeInTheDocument;
+});

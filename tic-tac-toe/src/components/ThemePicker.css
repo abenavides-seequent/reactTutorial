@@ -1,16 +1,16 @@
 div {
-    text-align: right;
+  text-align: right;
 }
 
 .buttonToggle {
-    margin-top: 30px !important;
-    margin-right: 30px !important;
+  margin-top: 30px !important;
+  margin-right: 30px !important;
 }
 
 .off {
-    color: rgb(187, 187, 187);
+  color: rgb(187, 187, 187);
 }
 
 .on {
-    color: rgb(255, 197, 62)
+  color: rgb(255, 197, 62);
 }

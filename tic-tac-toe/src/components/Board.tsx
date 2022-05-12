@@ -1,8 +1,8 @@
-import React from 'react'
-import Square from './Square'
-import './Board.css'
+import React from "react";
+import Square from "./Square";
+import "./Board.css";
 
-type ValidSquare = 'X' | 'O' | null;
+type ValidSquare = "X" | "O" | null;
 
 interface BoardProps {
   onClick(i: number): void;
@@ -12,7 +12,13 @@ interface BoardProps {
 //board function renders entire board
 const Board: React.FC<BoardProps> = (props) => {
   const renderSquare = (i: number) => {
-    return <Square  value={props.squares[i]}  onClick={() => props.onClick(i)} index={i} />;
+    return (
+      <Square
+        value={props.squares[i]}
+        onClick={() => props.onClick(i)}
+        index={i}
+      />
+    );
   };
   return (
     <div>
@@ -35,4 +41,4 @@ const Board: React.FC<BoardProps> = (props) => {
   );
 };
 
-export default Board
+export default Board;
