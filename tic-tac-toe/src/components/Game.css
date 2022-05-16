@@ -1,0 +1,29 @@
+.game {
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  .game-parts {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .game-status {
+    padding-bottom: 5%;
+  }
+  
+  .goToMove {
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+    width: 100%;
+    background-color: rgb(108 17 193) !important;
+  }
