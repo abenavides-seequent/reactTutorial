@@ -1,11 +1,11 @@
-import React from 'react'
-import {useState} from 'react'
-import {calculateWinner} from '../features/CalculateWinner'
-import Board from './Board'
-import { Button, Typography } from '@mui/material'
-import './Game.css'
+import React from "react";
+import { useState } from "react";
+import { calculateWinner } from "../features/CalculateWinner";
+import Board from "./Board";
+import { Button, Typography } from "@mui/material";
+import "./Game.css";
 
-type ValidSquare = 'X' | 'O' | null;
+type ValidSquare = "X" | "O" | null;
 
 //game function controls game mechanics
 const Game: React.FC = () => {
@@ -70,10 +70,9 @@ const Game: React.FC = () => {
   if (winner) {
     //displays winner or next turn
     status = "Winner: " + winner + "!";
-  } else if (stepNumber === 9){
+  } else if (stepNumber === 9) {
     status = "It's A Tie!";
-  }
-  else {
+  } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
   }
 
@@ -101,6 +100,4 @@ const Game: React.FC = () => {
   );
 };
 
-
-
-export default Game
+export default Game;

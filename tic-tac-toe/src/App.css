@@ -42,11 +42,10 @@ body {
   margin: 0;
 }
 
-.light{
-    background-color: white;
+.light {
+  background-color: white;
 }
 
-.dark{
+.dark {
   background-color: rgb(1, 2, 70);
 }
-
